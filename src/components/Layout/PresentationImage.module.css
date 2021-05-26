@@ -1,0 +1,6 @@
+.main-image img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  overflow: hidden;
+}
