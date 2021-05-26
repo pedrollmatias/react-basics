@@ -1,5 +1,6 @@
 import React from 'react';
 import PresentationImage from './PresentationImage';
+import HeaderCartButton from './HeaderCartButton';
 import classes from './Header.module.css';
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
     <>
       <header className={classes.header}>
         <h1>Food Order</h1>
-        <button>Cart</button>
+        <HeaderCartButton />
       </header>
       <PresentationImage />
     </>
