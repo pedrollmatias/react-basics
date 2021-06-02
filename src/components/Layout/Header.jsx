@@ -3,12 +3,12 @@ import PresentationImage from './PresentationImage';
 import HeaderCartButton from './HeaderCartButton';
 import classes from './Header.module.css';
 
-const Header = () => {
+const Header = ({ onShowCart }) => {
   return (
     <>
       <header className={classes.header}>
         <h1>Food Order</h1>
-        <HeaderCartButton />
+        <HeaderCartButton onClick={onShowCart} />
       </header>
       <PresentationImage />
     </>
