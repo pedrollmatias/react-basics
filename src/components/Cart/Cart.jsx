@@ -10,9 +10,13 @@ const Cart = ({ onClose }) => {
   const totalAmount = `$ ${cartCtx.totalAmount.toFixed(2)}`;
   const hasItems = Boolean(cartCtx.items.length);
 
-  const cartItemRemoveHandler = () => {};
+  const cartItemRemoveHandler = (itemId) => {
+    cartCtx.removeItem(itemId);
+  };
 
-  const cartItemAddHandler = () => {};
+  const cartItemAddHandler = (item) => {
+    cartCtx.addItem({ ...item, amount: 1 });
+  };
 
   return (
     <Modal onClose={onClose}>
